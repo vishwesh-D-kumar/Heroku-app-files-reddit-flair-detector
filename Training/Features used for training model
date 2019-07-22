@@ -1,0 +1,31 @@
+-Upvote count
+-Net comment upvote count
+-Net gildings in post
+-Text data of Post : sentiment analysis
+-Text data of Comments(top 10):sentimeent analysis
+-Text data of Comments+Posts:Naive Bayes
+-User who has posted
+-Flairs in comments(Removing it,Felt that might be cheating)
+-Distinguished or not
+
+removing over_18 as there is not much variation
+
+
+
+Machine learning models trained 
+
+Text Based : 
+MultiNomial Bayes
+
+
+
+
+
+Brownie Points:
+Each of the below are seperated according to flairs
+Most frequently used words in reddit india
+Words most frequently used in a flair 
+Sentiment Analysis
+Comment and upvote share
+
+

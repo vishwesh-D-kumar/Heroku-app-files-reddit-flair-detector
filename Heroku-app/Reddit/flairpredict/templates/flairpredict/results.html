@@ -1,0 +1,49 @@
+{% load static %}
+
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'flairpredict/results.css' %}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="d-flex justify-content-around">
+	{% for model in flairs.keys %}
+	{% if model != 'LinearSVC' %}
+	<strong><p class="bg-primary">{{model}}</p></strong>
+	{% else %}
+	<strong><p class="bg-danger">{{model}}(Best Model)</p></strong>
+	{% endif %}
+	{% endfor %}
+	</div>
+	<div class="d-flex justify-content-around">
+	{% for flair in flairs.values %}
+	
+
+	<a href="#" class="btn btn-info btn-lg" >{{flair}}</a>
+	
+	{% endfor %}
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="d-flex justify-content-center">
+	<strong><p class="bg-success">Actual Flair</p></strong>
+	</div>
+	<div class="d-flex justify-content-center">
+	<a href="#" class="btn btn-primary btn-lg" >{{actual_flair}}</a>
+	</div>
+
+</body>

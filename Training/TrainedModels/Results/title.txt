@@ -1,0 +1,19 @@
+Model Name  Accuracy
+----------- Unpolarized_dataset.pkl DATAFRAME Under Consideration---------
+LinearSVC 0.5688622754491018
+MultinomialNB 0.5329341317365269
+SGDClassifier 0.5029940119760479
+RandomForestClassifier 0.4311377245508982
+LogisticRegression 0.5568862275449101
+----------- Pickle1.pkl DATAFRAME Under Consideration---------
+LinearSVC 0.624
+MultinomialNB 0.6
+SGDClassifier 0.56
+RandomForestClassifier 0.552
+LogisticRegression 0.6
+----------- Pickle2.pkl DATAFRAME Under Consideration---------
+LinearSVC 0.796875
+MultinomialNB 0.7890625
+SGDClassifier 0.734375
+RandomForestClassifier 0.7734375
+LogisticRegression 0.7890625

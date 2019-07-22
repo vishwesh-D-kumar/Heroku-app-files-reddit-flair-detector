@@ -1,0 +1,35 @@
+{% load static %}
+<style type="text/css" >
+body {
+		background-image: url("/static/flairpredict/BrowniePoints/TimeAnalysis/{{flair}}.png") ;
+	/*background-image:url("SnooMain.jpg");*/
+    /*background-image:url("homepage.gif");*/
+    /*background-position: center; */
+    /*background-color: #4169e1*/
+   text-align: center;
+   height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+}
+h1{
+	text-align: center;
+}
+</style>
+<head>	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<h1 class="display-8">Frequency graph of activity by hours of day(24 hours)==>Click to Filter by flair</h1>
+<p class="text-success">                                  {{flair}}</p>
+{% for flair in allowed_flairs %}
+	<div class="d-flex justify-content-end">
+	<a href="/flairpredict/brownies?flair={{flair}}&type=time" class="btn btn-info btn-lg" >{{flair}}</a>
+<br>
+
+</div>
+{% endfor %}
+<br>
+<a href="/flairpredict/brownies?type=sentiment" class="btn btn-primary btn-lg btn-block" >Next</a>
+

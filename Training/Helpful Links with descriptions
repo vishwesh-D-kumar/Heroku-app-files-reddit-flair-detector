@@ -1,0 +1,23 @@
+MongoDB integration using djongo : 
+https://www.youtube.com/watch?v=LU6nYblf2cs
+
+
+Machine learning :
+	Text based databases
+	https://towardsdatascience.com/net-upvote-prediction-and-subreddit-based-sentence-completion-for-reddit-comments-98668b510a1a 
+	Multiple models to be trained:
+	https://towardsdatascience.com/predicting-reddit-comment-karma-a8f570b544fc
+	https://towardsdatascience.com/machine-learning-text-processing-1d5a2d638958
+
+Saving trained models in Database:
+	pickle to mongodb
+Interactive visualizations:
+
+
+TO BE LOOKED INTO : 
+	Heroku or Digital Ocean Droplet
+
+
+
+
+
